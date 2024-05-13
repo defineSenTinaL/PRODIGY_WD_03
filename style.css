@@ -1,0 +1,147 @@
+* {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: aliceblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	width: 500px;
+	height: fit-content;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.shadow {
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+}
+
+.separate {
+	justify-content: space-between;
+}
+
+#player1,
+#player2 {
+	width: 150px;
+	padding: 10px 20px;
+	border-radius: 8px;
+	background-color: rgb(240, 240, 240);
+	border: none;
+}
+
+#player1:focus,
+#player2:focus {
+	background-color: rgb(230, 230, 230);
+	outline: none;
+}
+
+#board {
+	margin: 30px auto 10px auto;
+	display: grid;
+	width: fit-content;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+	border: none;
+}
+
+.icon {
+	width: fit-content;
+	height: fit-content;
+}
+
+.box:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+#message {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#restart {
+	background: hsla(42, 93%, 57%, 1);
+
+	background: linear-gradient(
+		135deg,
+		hsla(42, 93%, 57%, 1) 12%,
+		hsla(3, 100%, 50%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		135deg,
+		hsla(42, 93%, 57%, 1) 12%,
+		hsla(3, 100%, 50%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		135deg,
+		hsla(42, 93%, 57%, 1) 12%,
+		hsla(3, 100%, 50%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7BA2C", endColorstr="#FF0D00", GradientType=1 );
+
+	color: white;
+	margin: 20px auto;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	width: fit-content;
+	border: none;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+#restart:hover {
+	opacity: 0.8;
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#gameover {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 8px;
+	width: 340px;
+	height: 340px;
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+}

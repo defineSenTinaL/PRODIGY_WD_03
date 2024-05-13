@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+		<script src="script.js"></script>
+		<title>Tic Tac Toe</title>
+	</head>
+	<body>
+		<div class="container shadow">
+			<div class="row separate">
+				<input
+					id="player1"
+					type="text"
+					placeholder="Player 1 name"
+					value="Player 1"
+				/>
+				<input
+					id="player2"
+					type="text"
+					placeholder="Player 2 name"
+					value="Player 2"
+				/>
+			</div>
+			<div id="message">Player 1's turn</div>
+			<div id="board">
+				<button id="0" class="box"></button>
+				<button id="1" class="box"></button>
+				<button id="2" class="box"></button>
+				<button id="3" class="box"></button>
+				<button id="4" class="box"></button>
+				<button id="5" class="box"></button>
+				<button id="6" class="box"></button>
+				<button id="7" class="box"></button>
+				<button id="8" class="box"></button>
+				<div id="gameover">Game Over!</div>
+			</div>
+			<div class="button"><button id="restart">Restart</button></div>
+		</div>
+	</body>
+</html>
